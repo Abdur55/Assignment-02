@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CU:wght@100..400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CU:wght@100..400&display=swap');
 
 
    
@@ -17,7 +17,7 @@
 }
 .nav-links {
     display: flex;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.562);
     border-radius: 50px;
    
 }
@@ -29,6 +29,11 @@
 .nav-link{
     text-decoration: none;
     color: white;
+}
+
+
+.nav-link-bars{
+    display: none;
 }
 .span {
     color: rgb(224, 40, 15);
@@ -232,6 +237,39 @@
 }
 /* table calculator ------end----- */
 
+/* trainings-container */
+.container-container {
+    max-width: 1380px;
+    margin: 0 auto;
+}
+.trainings-container {
+    margin: 50px 130px;
+
+}
+.trainings-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.experience {
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+}
+
+.trainings-img img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+.img-header {
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/* trainings-container */
+
 /* meet our team-------start--- */
 .team-membar {
     
@@ -271,7 +309,7 @@
 
 .meet-our {
     text-align: center;
-    padding: 50px;
+    padding: 20px;
 }
 .meet-our h3{
     margin-bottom: 8px;
@@ -351,5 +389,15 @@ footer {
 
     .team-membar {
         grid-template-columns: 1fr;
+    }
+
+    .nav-links .nav-item{
+        display: none;
+ 
+    }
+
+    .nav-links{border:none;}
+    .nav-link-bars{
+        display: block;
     }
 }
