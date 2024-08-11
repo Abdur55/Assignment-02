@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CU:wght@100..400&display=swap');
 
 
-   
+   *{
+    box-sizing: border-box;
+   }
   
 /* Navbar-----start------ */
  body {
@@ -102,9 +104,10 @@
     margin-bottom: 80px;
 }
 .tutorial {
-    width: 12rem;
+    width: 14rem;
     height: 6rem;
     background-color: rgba(95, 89, 89, 0.5);
+    border-radius: 15px;
 }
 
 
@@ -119,11 +122,13 @@
     text-align: center;
 }
 .tutorial h4 {
-    margin-bottom: 18px;
+    margin-bottom: 25px;
     color: aliceblue;
+    font-size: 35px;
+    margin-top: 3px;
 }
 .tutorial p {
-   
+   font-size: 18px;
 }
 
 .workouts{
@@ -134,8 +139,17 @@
     left:70%;
 }
 
-.workouts p{
+.workouts {
+    width: 13rem;
+    height: 6rem;
+   background-color:  rgba(110, 105, 105, 0.61);
+   border-radius: 12px;
+}
+
+.workouts h4{
     color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 20px;
 }
 /* banner------end----- */
 
@@ -236,6 +250,114 @@
     font-size: 16px;
 }
 /* table calculator ------end----- */
+
+/* -------------------    Table chart start      -------------------- */
+
+.background {
+    background-color: rgba(37, 41, 40, 0.973);
+    margin-top: 6rem;
+}
+
+.bmi-flex{
+    display: flex;
+}
+
+
+.calculate-chart-box h3{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.alculate-bmi-box h3{
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+
+.calculate-bmi-box p{
+    font-size: .9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 2rem;
+}
+
+form{
+    margin-bottom: 2.2rem;
+}
+
+table, td, th {  
+    border: 1px solid rgba(255, 255, 255, 0.315);
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 62%;
+
+  }
+  
+  th{
+    color: white;
+    padding:15px;
+  }
+
+  td {
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.432);
+  }
+  .calculate-chart{
+    flex: 50%;
+}
+
+
+
+input[type=text] {
+    padding: 11px 22px;
+    width: 47%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #f1f1f134;
+    border-radius: 5px;
+    border:none;
+    color: white;
+}
+
+select{
+    width: 47%;
+    padding: 12px 20px;
+    background-color: #f1f1f13f;
+    border-radius: 6px;
+    border:none;
+    color: #ffffff7c
+}
+
+input::placeholder {
+    color: #ffffff7c; 
+}
+
+.select-activity{
+    width: 96.7%;
+    background-color: #f1f1f13f;
+    border-radius: 5px;
+    border:none;
+
+}
+
+.col-calculate-bmi-box .btn{
+    margin-bottom: 17px;
+}
+.calculator-content{
+    padding: 40px 0px;
+}
+
+.btn {
+    
+}
+
+/* -------------------    Table chart end      -------------------- */
+
 
 /* trainings-container */
 .container-container {
