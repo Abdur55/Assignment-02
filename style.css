@@ -322,8 +322,6 @@ table, td, th {
     flex: 50%;
 }
 
-
-
 input[type=text] {
     padding: 11px 22px;
     width: 47%;
@@ -537,5 +535,13 @@ footer {
     .nav-links{border:none;}
     .nav-link-bars{
         display: block;
+    }
+
+    .trainings-img {
+        grid-template-columns: 1fr;
+    }
+
+    .bmi-flex{
+        flex-direction: column;
     }
 }
